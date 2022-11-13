@@ -89,8 +89,8 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_ALIDDNS=y" >> .config #aliddns
         echo "CONFIG_FIRMWARE_INCLUDE_ADGUARDHOME=y" >> .config #ADGUARDHOME
         echo "CONFIG_FIRMWARE_INCLUDE_FRPC=y" >> .config #内网穿透FRPC
-        echo "CONFIG_FIRMWARE_INCLUDE_FRPS=n" >> .config #内网穿透FRPS
-        echo "CONFIG_FIRMWARE_INCLUDE_WIREGUARDW=Y" >> .config #wireguard
+        echo "CONFIG_FIRMWARE_INCLUDE_FRPS=y" >> .config #内网穿透FRPS
+        echo "CONFIG_FIRMWARE_INCLUDE_WIREGUARDW=n" >> .config #wireguard
         else
         echo "CONFIG_FIRMWARE_INCLUDE_MENTOHUST=n" >> .config #MENTOHUST
         echo "CONFIG_FIRMWARE_INCLUDE_SCUTCLIENT=n" >> .config #SCUTCLIENT
