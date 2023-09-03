@@ -37,7 +37,7 @@ jobs:
         if [ $KERNEL = "4.4" ] ; then
         git clone --depth=1 https://github.com/Pshuier/padavan-4.4.git /opt/rt-n56u
         else
-        git clone --depth=1 https://github.com/Pshuier/rt-n56u.git /opt/rt-n56u
+        git clone --depth=1 https://github.com/Pshuier/Padavan-KVR
         fi
         cd /opt/rt-n56u/toolchain-mipsel
         sh dl_toolchain.sh
@@ -45,7 +45,7 @@ jobs:
     - name: Build Firmware
       env:
         TNAME: RM2100
-        KERNEL: 4.4
+        KERNEL: 3.4
       run: |
         cd /opt/rt-n56u/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then
